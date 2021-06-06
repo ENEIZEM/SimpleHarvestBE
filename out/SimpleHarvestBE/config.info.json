@@ -1,0 +1,38 @@
+{
+    "description": "This is a description of SimpleHarvestBE configuration file.",
+    "properties": {
+        "on_click": {
+            "name": {
+                "en": "Auto-plant on click",
+                "ru": "Авто-посадка при нажатии"
+            },
+            "description": {
+                "en": "Whether to auto-plant crops when clicking on grown ones",
+                "ru": "Садить ли растения автоматически при нажатии по выросшим блокам?"
+            },
+            "displayIf": "enabled"
+        },
+        "on_destroy": {
+            "name": {
+                "en": "Auto-plant on destroy",
+                "ru": "Авто-посадка при ломании"
+            },
+            "description": {
+                "en": "Whether to auto-plant crops when destroying grown ones",
+                "ru": "Садить ли растения автоматически при ломании выросших блоков?"
+            },
+            "displayIf": "enabled"
+        },
+        "chat_message": {
+            "name": {
+                "en": "Chat message",
+                "ru": "Сообщение в чате"
+            },
+            "description": {
+                "en": "Whether to write short info about the mod in the chat when entering the world",
+                "ru": "Отправлять ли короткую информацию о моде в чат при заходе в мир?"
+            },
+            "displayIf": "enabled"
+        }
+    }
+}

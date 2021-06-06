@@ -1,0 +1,6 @@
+{
+    "enabled": true,
+    "on_click": true,
+    "on_destroy": false,
+    "chat_message": true
+}
