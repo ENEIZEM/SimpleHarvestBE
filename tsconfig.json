@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "removeComments": true,
+        "experimentalDecorators": false,
+        "downlevelIteration": true,
+        "target": "ES5",
+        "lib": ["ESNext"],
+        "outFile": "out/SimpieHarvestBE/main.js"
+    },
+    "compileOnSave": false,
+    "include": [
+        "tools/declarations/*.d.ts",
+        "source/main.ts"
+    ]
+}
