@@ -1,7 +1,8 @@
 if(__config__.getBool("on_click")){
 	Callback.addCallback("ItemUse", (coords, item, block, isExternal, player) => {
-		if(!!~SUPPORTED_BLOCKS.indexOf(block.id)){
+	 if(!!~SUPPORTED_BLOCKS.indexOf(block.id)){
 			let region = BlockSource.getDefaultForActor(player);
+		__config__.getBool("spawn_exp_orbs") && ToolAPI.dropExpOrbs(coords.x, coords.y, coords.x, randomInt(1, 3));
 			switch(block.id){
 				case VanillaTileID.wheat:
 					if(block.data == 7){
@@ -44,6 +45,7 @@ if(__config__.getBool("on_click")){
 if(__config__.getBool("on_destroy")){
 	Callback.addCallback("DestroyBlock", (coords, block, player) => {
 		if(!!~SUPPORTED_BLOCKS.indexOf(block.id)){
+		 __config__.getBool("spawn_exp_orbs") && ToolAPI.dropExpOrbs(coords.x, coords.y, coords.x, randomInt(1, 3));
 			Game.prevent();
 			let region = BlockSource.getDefaultForActor(player);
 			switch(block.id){

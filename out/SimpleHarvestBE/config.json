@@ -1,6 +1,7 @@
 {
-    "enabled": true,
-    "on_click": true,
-    "on_destroy": false,
-    "chat_message": true
-}
+    "enabled":true,
+    "on_click":true,
+    "on_destroy":true,
+    "chat_message":true,
+    "spawn_exp_orbs":true
+  }

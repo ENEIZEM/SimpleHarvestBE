@@ -1,6 +1,15 @@
 {
-    "description": "This is a description of SimpleHarvestBE configuration file.",
+    "description": {
+        "en": "This is a description of SimpleHarvestBE configuration file.",
+        "ru": "Это настройки мода SimpleHarvestBE"
+    },
     "properties": {
+            "enabled": {
+            "name": {
+                "en": "Enable mod",
+                "ru": "Включить мод"},
+            "index": 0
+        },
         "on_click": {
             "name": {
                 "en": "Auto-plant on click",
@@ -8,7 +17,7 @@
             },
             "description": {
                 "en": "Whether to auto-plant crops when clicking on grown ones",
-                "ru": "Садить ли растения автоматически при нажатии по выросшим блокам?"
+                "ru": "Сажать ли растения автоматически при нажатии по выросшим блокам?"
             },
             "displayIf": "enabled"
         },
@@ -19,7 +28,7 @@
             },
             "description": {
                 "en": "Whether to auto-plant crops when destroying grown ones",
-                "ru": "Садить ли растения автоматически при ломании выросших блоков?"
+                "ru": "Сажать ли растения автоматически при ломании выросших блоков?"
             },
             "displayIf": "enabled"
         },
@@ -31,6 +40,17 @@
             "description": {
                 "en": "Whether to write short info about the mod in the chat when entering the world",
                 "ru": "Отправлять ли короткую информацию о моде в чат при заходе в мир?"
+            },
+            "displayIf": "enabled"
+        },
+        "spawn_exp_orbs": {
+            "name": {
+                "en": "Spawn orbs of experience",
+                "ru": "Появление частиц опыта"
+            },
+            "description": {
+                "en": "Make experience orbs drop out when auto-landing?",
+                "ru": "Сделать выпадение частиц опыта при авто-посадке?"
             },
             "displayIf": "enabled"
         }
