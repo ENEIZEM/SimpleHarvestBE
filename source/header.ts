@@ -13,6 +13,8 @@ if(__config__.getBool("chat_message")){
     });
 }
 
-const randomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
-const SUPPORTED_BLOCKS: number[] = [VanillaTileID.wheat, VanillaTileID.cocoa, VanillaTileID.beetroot, VanillaTileID.carrots, VanillaTileID.potatoes, VanillaTileID.nether_wart];
-const fortune = (extra: ItemExtraData) => ToolAPI.getEnchantExtraData(extra).fortune;
+type CropMaturityCheckFunc = (blockData: number) => boolean;
+type NewCropGetFunc = (blockData: number) => number;
+type SupportedBlockParams = { check: CropMaturityCheckFunc, getNewCrop: NewCropGetFunc };
+const SUPPORTED_BLOCKS: java.util.Map<string, SupportedBlockParams> = new java.util.HashMap();
+const addSupportedBlock = (id: number, func: CropMaturityCheckFunc, newCrop: NewCropGetFunc) => SUPPORTED_BLOCKS.put(IDRegistry.getIdInfo(id), {check: func, getNewCrop: newCrop});
