@@ -12,6 +12,7 @@
     "include": [
         "tools/declarations/*.d.ts",
         "source/header.ts",
-        "source/main.ts"
+        "source/main.ts",
+        "source/footer.ts"
     ]
 }
