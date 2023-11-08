@@ -11,7 +11,8 @@ if(__config__.getBool("on_click")){
 			}
 		}
 	});
-}
+} //2023 2023
+
 
 if(__config__.getBool("on_destroy")){
 	Callback.addCallback("DestroyBlock", (coords, block, player) => {
