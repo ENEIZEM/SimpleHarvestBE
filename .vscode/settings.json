@@ -1,12 +1,19 @@
 {
+    "java.dependency.packagePresentation": "flat",
+    "java.dependency.syncWithFolderExplorer": true,
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/.vscode/": true,
-        "**/.gitignore": true
+        "**/__pycache__/**": true,
+        "**/tsconfig.json": true,
+        "toolchain/bin": true,
+        "toolchain/adb": true,
+        "toolchain/build/gcc": true,
+        "toolchain/build/gradle": true,
+        "toolchain/build/lock": true,
+        "**/*.log": true,
+        ".settings": true
     },
-    "vscode.tsc.compiler.alertTSConfigChanges": "never"
+    "java.project.referencedLibraries": [
+        "toolchain/classpath/*.jar",
+        "src/java/**/lib/*.jar"
+    ]
 }

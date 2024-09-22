@@ -1,0 +1,84 @@
+{
+    "global": {
+        "info": {
+            "name": "SimpleHarvestBE",
+            "author": "Pomazuev Maksim",
+            "version": "2.0.0",
+            "description": "Auto planting is now in MinecraftBE! Break or click on the crop block and it will drop and be planted automatically!",
+            "clientside": true
+        },
+        "api": "CoreEngine"
+    },
+    "make": {
+        "debugAbi": "armeabi-v7a",
+        "abis": [
+            "armeabi-v7a",
+            "x86"
+        ],
+        "linkNative": [
+            "minecraftpe",
+            "innercore",
+            "nativejs"
+        ],
+        "excludeFromRelease": [],
+        "pushTo": "storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/SimpleHarvestBE",
+        "ndkPath": null
+    },
+    "resources": [
+        {
+            "path": "src/assets",
+            "type": "resource_directory"
+        },
+        {
+            "path": "src/assets/gui",
+            "type": "gui"
+        },
+        {
+            "path": "src/minecraft_packs/resource/*",
+            "type": "minecraft_resource_pack"
+        },
+        {
+            "path": "src/minecraft_packs/behavior/*",
+            "type": "minecraft_behavior_pack"
+        }
+    ],
+    "sources": [
+        {
+            "source": "src/dev",
+            "target": "main.js",
+            "type": "main",
+            "language": "typescript"
+        },
+        {
+            "source": "src/launcher.js",
+            "type": "launcher",
+            "language": "javascript"
+        },
+        {
+            "source": "src/libraries/*",
+            "type": "library",
+            "language": "javascript"
+        },
+        {
+            "source": "src/preloader/*",
+            "type": "preloader",
+            "language": "javascript"
+        }
+    ],
+    "compile": [
+        {
+            "source": "src/native/*",
+            "type": "native"
+        },
+        {
+            "source": "src/java/*",
+            "type": "java"
+        }
+    ],
+    "additional": [
+        {
+            "source": "src/assets/root/*",
+            "targetDir": "."
+        }
+    ]
+}

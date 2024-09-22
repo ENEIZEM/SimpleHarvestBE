@@ -1,13 +1,20 @@
 {
     "description": {
-        "en": "This is a description of SimpleHarvestBE configuration file.",
-        "ru": "Это настройки мода SimpleHarvestBE"
+        "ru":"Настройки мода:",
+        "en":"Mod settings:",
+        "es":"Configuración de mod:",
+        "pt":"Configurações do mod:",
+        "zh":"模組設置:"
     },
     "properties": {
             "enabled": {
             "name": {
-                "en": "Enable mod",
-                "ru": "Включить мод"},
+                "en":"Enable mod",
+                "ru":"Включить мод",
+                "es":"Habilitar mod",
+                "pt":"Habilitar mod",
+                "zh":"啟用模組"
+            },
             "index": 0
         },
         "on_click": {
